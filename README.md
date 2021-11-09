@@ -41,11 +41,8 @@ ReactDOM.render(<br>
 </React.StrictMode>,<br>
 document.getElementById('root')<br>
 );<br>
-
 ↑ 이것만 남기고 다지우기<br>
-
 <br>
-
 8.app.js파일에서도 위에 import다 제거(logo랑 css)<br>
    그리고 리턴안에 div 기본태그 하나만 두기<br>
    <br>
