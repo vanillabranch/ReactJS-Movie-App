@@ -44,10 +44,10 @@ document.getElementById('root')<br>
 
 ▲ 이것만 남기고 다지우기<br>
 <br>
-8. app.js파일에서도 위에 import다 제거(logo랑 css)<br>
+8.app.js파일에서도 위에 import다 제거(logo랑 css)<br>
    그리고 리턴안에 div 기본태그 하나만 두기<br>
    <br>
-9. 마지막으로 바닥부터 시작할거기 때문에 아래 파일들 다 삭제<br>
+9.마지막으로 바닥부터 시작할거기 때문에 아래 파일들 다 삭제<br>
    App.test.js<br>
    App.css<br>
    index.css<br>
@@ -55,7 +55,7 @@ document.getElementById('root')<br>
    reportWebVitals.js<br>
    setupTests.js<br>
    <br>
-10. index.js랑 app.js만 남겨두기. 바닥부터 시작할 리액트앱의 초기설정 끝<br>
+10.index.js랑 app.js만 남겨두기. 바닥부터 시작할 리액트앱의 초기설정 끝<br>
     <br>
 ※파일 날려버리고 수정 중간에 오류날수 있음.  <br>
 그땐 브라우저 새로고침이나 npm restart 할것.<br>
@@ -98,7 +98,8 @@ git pull origin master 하면 된다.<br>
 ------------------------------------------------------------------------
 
 <br>
-# 3. PropType 설치방법(값이 할당되어야 할 타입과 필수여부 등 지정하기 위함.)<br>
+
+# 3.PropType 설치방법(값이 할당되어야 할 타입과 필수여부 등 지정하기 위함.)<br>
 터미널 열고 npm i prop-types입력.<br>
 만약 오류나면, npm audit fix 를 한다, (보통 오류 보정을 위한 코드가 제시됨)<br>
 <br>
