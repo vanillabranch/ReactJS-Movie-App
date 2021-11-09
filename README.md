@@ -11,30 +11,38 @@
 
 #리액트js 샘플 웹 시작하기.  
 ------------------------------------------------------------------------
-###1.node.js 사이트가서 다운.  (nodejs.org)<br>
+
+1.node.js 사이트가서 다운.  (nodejs.org)<br>
    설치하고 윈도우 커맨드에서 node -v 있는지 체크.<br>
 <br>
-###2.npx체크하기
+
+2.npx체크하기
    cmd에서 npx -v 해서 버전나오면 설치성공<br>
 <br>
-###3.샘플 프로젝트 생성
+
+3.샘플 프로젝트 생성
    cmd에서 npx create-react-app 내프로젝트명<br> 
     (위치시킬 경로로 셋팅해야함. cd c:\users\desktop...처럼)<br>
 <br>
+
 4.개발툴에서 다운받아진 샘플 프로젝트를 열고나서 터미널에서 npm start를 해서 개발서버를 오픈<br>
    ( 개발툴 웹스톰에서 진행했음)<br>
 <br>
+
 5.그리고 소스트리에서 public에 index.html과, src안에 index.js파일등 소스 한번 둘러보자<br>
 <br>
+
 6.소스 파일 아무거나 수정해서 오토리로드 되는지도 보자 <br>
 (서버가 올라왔으면 브라우저가 하나 떠있을거임)<br>
 <br>
+
 7.완전 바닥부터 시작하기 위해, 기초작업 해주기<br>
    index.js 파일 에서 <br>
    import React from 'react';<br>
    import ReactDOM from 'react-dom';<br>
    import App from './App';<br>
 <br>
+
 ReactDOM.render(<br>
 <React.StrictMode><br>
 <App /><br>
