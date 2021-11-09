@@ -95,7 +95,6 @@ document.getElementById('root')
 #3. PropType 설치방법(값이 할당되어야 할 타입과 필수여부 등 지정하기 위함.)
 터미널 열고 npm i prop-types입력.
 만약 오류나면, npm audit fix 를 한다, (보통 오류 보정을 위한 코드가 제시됨)
-
 ------------------------------------------------------------------------
 #4.리액트 라우트 설치
 터미널 열고 npm install react-router-dom
