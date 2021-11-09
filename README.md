@@ -9,9 +9,9 @@
 
 
 
-# 1.리액트js 샘플 웹 시작하기.
+#1.리액트js 샘플 웹 시작하기.
 
-###1.node.js 사이트가서 다운.  (nodejs.org)<br>
+###(1)node.js 사이트가서 다운.  (nodejs.org)<br>
    설치하고 윈도우 커맨드에서 node -v 있는지 체크.<br>
 <br>
 ###2.npx체크하기<br>
