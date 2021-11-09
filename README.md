@@ -1,7 +1,7 @@
 #ReactJS-Movie-App
 
 
-01.ReactJS Practice
+>01.ReactJS Practice
 -> 02.React-for-beginner
 -> 03.ReactJS To Do List :)
 -> 04.ReactJS-Coin-Tracker
@@ -9,29 +9,25 @@
 
 
 
-is super cool
----------------------------------
-is super cool
+# 1. 리액트js 샘플 웹 시작하기.
 
-#1. 리액트js 샘플 웹 시작하기.
+1.node.js 사이트가서 다운.  (nodejs.org)<br>
+   설치하고 윈도우 커맨드에서 node -v 있는지 체크.<br>
 
-1. node.js 사이트가서 다운.  (nodejs.org)
-   설치하고 윈도우 커맨드에서 node -v 있는지 체크.
+2.npx체크하기<br>
+   cmd에서 npx -v 해서 버전나오면 설치성공<br>
 
-2. npx체크하기
-   cmd에서 npx -v 해서 버전나오면 설치성공
+3.샘플 프로젝트 생성<br>
+   cmd에서 npx create-react-app 내프로젝트명 (위치시킬 경로로 셋팅해야함. cd c:\users\desktop...처럼)<br>
 
-3. 샘플 프로젝트 생성
-   cmd에서 npx create-react-app 내프로젝트명 (위치시킬 경로로 셋팅해야함. cd c:\users\desktop...처럼)
+4.개발툴에서 다운받아진 샘플 프로젝트를 열고나서 터미널에서 npm start를 해서 개발서버를 열어보자<br>
+   ( 개발툴 웹스톰에서 진행했음)<br>
 
-4. 개발툴에서 다운받아진 샘플 프로젝트를 열고나서 터미널에서 npm start를 해서 개발서버를 열어보자
-   ( 개발툴 웹스톰에서 진행했음)
+5.그리고 소스트리에서 public에 index.html과, src안에 index.js파일등 소스 한번 둘러보자
 
-5. 그리고 소스트리에서 public에 index.html과, src안에 index.js파일등 소스 한번 둘러보자
+6.소스 파일 아무거나 수정해서 오토리로드 되는지도 보자 (서버가 올라왔으면 브라우저가 하나 떠있을거임)
 
-6. 소스 파일 아무거나 수정해서 오토리로드 되는지도 보자 (서버가 올라왔으면 브라우저가 하나 떠있을거임)
-
-7. 완전 바닥부터 시작하기 위해, 기초작업 해주기
+7.완전 바닥부터 시작하기 위해, 기초작업 해주기
    index.js 파일 에서 ▼
    import React from 'react';
    import ReactDOM from 'react-dom';
@@ -141,7 +137,7 @@ deploy명령을 하면 미리 실행하는 predeploy도 추가한다.
 추가할 구문 => "predeploy" : "npm run build"
 
 제대로 동작하는지 확인하고 싶다면, 2번에서 수행한 run npm build를 삭제해보자.
-그리고 npm run deploy 실행.
+그리고 npm run deploy 실행한다.(최종 실행 명령어)
 
 ※ {------------------------------------------------------------------------
 그럼 predeploy명령이 먼저 실행될것이고, 아래 명령이 수행되는것을 의미한다.
