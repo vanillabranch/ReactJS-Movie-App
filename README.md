@@ -11,13 +11,13 @@
 
 # 1.리액트js 샘플 웹 시작하기.
 
-1.node.js 사이트가서 다운.  (nodejs.org)<br>
+###1.node.js 사이트가서 다운.  (nodejs.org)<br>
    설치하고 윈도우 커맨드에서 node -v 있는지 체크.<br>
 <br>
-2.npx체크하기<br>
+###2.npx체크하기<br>
    cmd에서 npx -v 해서 버전나오면 설치성공<br>
 <br>
-3.샘플 프로젝트 생성<br>
+###3.샘플 프로젝트 생성<br>
    cmd에서 npx create-react-app 내프로젝트명<br> 
     (위치시킬 경로로 셋팅해야함. cd c:\users\desktop...처럼)<br>
 <br>
