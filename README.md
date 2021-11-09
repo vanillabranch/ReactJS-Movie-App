@@ -77,35 +77,47 @@ document.getElementById('root')<br>
 
 ------------------------------------------------------------------------
 
-# 2.만들어진 프로젝트 git으로 보내기<br>
+# 2.만들어진 프로젝트 git으로 보내기
+------------------------------------------------------------------------
 
 1.먼저 git저장소에 가서 new repository 하나 만들기.<br>
    readme.md추가 없이 그냥 단순하게 레파지토리 이름과 설명정도만 입력해서 생성<br>
 <br>
+
 2.생성이 완료되면 git 설정하는 설명 나오는데 다 무시하고 거기서 주소만 복사<br>
    (이렇게 생긴 주소 https://github.com/vanillabranch/react-for-beginners.git)<br>
 <br>
+
 3.그 다음 개발툴로 와서 (웹스톰 사용했음) 터미널에서 아래 명령어들 순차적으로 실행.<br>
 <br>
+
 4.git init<br>
 <br>
+
 5.git remote add origin https://github.com/vanillabranch/movie_app_2021.git<br>
 <br>
+
 6.git add .   <- 끝에 쩜 필수<br>
 <br>
-7.git commit -m "commit message 적고싶은대로"
+
+7.git commit -m "commit message 적고싶은대로"<br>
 <br>
-8.git push origin master
+
+8.git push origin master<br>
 <br>
-9.여기까지 한 다음, 내 레파지토리로 가면 성공적으로 올라온것을 볼수 있음.
+
+9.여기까지 한 다음, 내 레파지토리로 가면 성공적으로 올라온것을 볼수 있음.<br>
 <br>
-10.이후 소스 수정할때마다, 6번부터 8번을 반복해주면 수정내용들을 꾸준히 커밋&푸시할수 있다.
+
+10.이후 소스 수정할때마다, 6번부터 8번을 반복해주면 수정내용들을 꾸준히 커밋&푸시할수 있다.<br>
 <br>
+
 11.하지만 이건 새로운 브랜치를 따지 않고, 머지도 없고, 컨플릭트도 없는 <br>
 단독으로 혼자서 할때나 가능한 얘기다.<br>
 협업프로젝트시엔 git에 올리는 거 이후, 신규 브랜치, 머지, 컨플릭트 발생 처리등 <br>
 다양하게 익혀야 한다.<br>
 <br>
+
 ※참고로 git에서 올려버렸거나, 다른 팀원이 올린건 최신으로 받기 위해선, <br>
 git pull origin master 하면 된다.<br>
 <br>
