@@ -4,8 +4,11 @@ import Home from "./routes/Home";
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Detail from "./routes/Detail";
 
-//라우터를 이용하여, 사용자의 패스가 / 면 라우트한다, Home컴포넌트를.
-//라우터-라우츠(들), 라우터 별로 패스에 따른 컴포넌트를 구현.
+/*
+* React JS에서 중요한 요소들을 전부다 배웠음.
+* useState, props, map, useEffect, Route, Link, propTypes, fetch, JSX, useParams
+* */
+
 function App() {
     return (
         <Router>
@@ -15,7 +18,7 @@ function App() {
                     <h1>Hello</h1>
                 }/>
 
-                <Route path="/movie" element={<Detail/>}/>
+                <Route path="/movie/:id" element={<Detail/>}/>
 
                 <Route path="/" element={<Home/>}/>
 
