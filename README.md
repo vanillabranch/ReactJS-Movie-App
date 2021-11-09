@@ -30,7 +30,7 @@
 (서버가 올라왔으면 브라우저가 하나 떠있을거임)<br>
 <br>
 7.완전 바닥부터 시작하기 위해, 기초작업 해주기<br>
-   index.js 파일 에서 ▼<br>
+   index.js 파일 에서 ↓<br>
    import React from 'react';<br>
    import ReactDOM from 'react-dom';<br>
    import App from './App';<br>
