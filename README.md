@@ -96,6 +96,58 @@ document.getElementById('root')
 터미널 열고 npm i prop-types입력.
 만약 오류나면, npm audit fix 를 한다, (보통 오류 보정을 위한 코드가 제시됨)
 ------------------------------------------------------------------------
-#4.리액트 라우트 설치
+#4.리액트 라우터 설치
 터미널 열고 npm install react-router-dom
 만약 오류나면, npm audit fix 를 한다, (보통 오류 보정을 위한 코드가 제시됨)
+------------------------------------------------------------------------
+#5. github에 배포하기
+
+※내가 만든 프로젝트를 URL까지 달아서 배포해주는 깃허브 페이지 서비스를 이용하기.
+
+
+(1) 먼저 터미널에서 아래 명령어를 입력하여 설치
+npm i gh-pages
+
+
+(2) package.json 수정
+package.json파일에 보면, scripts영역에 build가 있다.
+이 명령어를 터미널에서 아래와 같이 입력 후 실행하면 production ready code를 생성한다.
+npm run build
+여기서 production ready code란 코드가 압축되고 소스 모든게 최적화 된다는 의미다.
+
+
+(3) 빌드 완료 후
+빌드가 완료되면 폴더 트리에 빌드 폴더가 생긴다. -> 코드가 압축된것을 의미하는데,
+이 소스들을 보면 내가 코딩한것과 다르게 이상하게 변환된 모습을 볼 수 있는데,
+이것이 바로 브라우저가 이해할수 있는 코드라고 할수 있다.(최적화 된 코드)
+(빌드가 끝나면 나오는결과물.)
+
+
+(4) 다시 package.json파일로 이동
+파일의 맨 밑에 아래 콤마를 포함한 구문을 추가한다
+, "homepage":"https://계정명.github.io/레파지토리 이름"
+
+※만약 레포지토리 이름을 모른다면? 터미널에서 git remote -v 를 입력하면 확인할 수 있다.
+
+그리고 다시 package.json의  scripts영역으로 가서 하나를 추가한다.
+바로 "deploy"
+
+이 명령어는 우리가 방금 설치한 gh-pages를 실행시키고
+"npm run build"를 수행 후 생성된 "build"라는 디렉토리를 가져가는것을 의미한다.
+추가할 구문 =>  "deploy" : "gh-pages -d build"
+
+하지만, deploy하기 전에 npm run build를 굳이 한번더 하기 싫으니,  
+deploy명령을 하면 미리 실행하는 predeploy도 추가한다.
+추가할 구문 => "predeploy" : "npm run build"
+
+제대로 동작하는지 확인하고 싶다면, 2번에서 수행한 run npm build를 삭제해보자.
+그리고 npm run deploy 실행.
+
+그럼 predeploy명령이 먼저 실행될것이고, 아래 명령이 수행되는것을 의미한다.
+npm run build
+
+그럼 2번에서 수행한 build폴더가 만들어지고, deploy명령인 gh-pages -d build가 실행된다.
+이후, gh-pages가 package.json에 homepage라는 이름으로 정의한 url에 업로드 될것이다.
+
+마지막으로 "homepage"에 정의한 홈페이지로 이동해서 확인해보자(2분정도 걸림)
+배포 끝!
