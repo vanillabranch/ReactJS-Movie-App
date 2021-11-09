@@ -48,12 +48,17 @@ ReactDOM.render(<br>
 <App /><br>
 </React.StrictMode>,<br>
 document.getElementById('root')<br>
-);<br>
- 이것만 남기고 다지우기<br>
+);
 <br>
+
+ 이것만 남기고 다지우기<br>
+
+<br>
+
 8.app.js파일에서도 위에 import다 제거(logo랑 css)<br>
    그리고 리턴안에 div 기본태그 하나만 두기<br>
    <br>
+
 9.마지막으로 바닥부터 시작할거기 때문에 아래 파일들 다 삭제<br>
    App.test.js<br>
    App.css<br>
@@ -62,11 +67,14 @@ document.getElementById('root')<br>
    reportWebVitals.js<br>
    setupTests.js<br>
    <br>
+
 10.index.js랑 app.js만 남겨두기. 바닥부터 시작할 리액트앱의 초기설정 끝<br>
     <br>
+
 ※파일 날려버리고 수정 중간에 오류날수 있음.  <br>
 그땐 브라우저 새로고침이나 npm restart 할것.<br>
     <br>
+
 ------------------------------------------------------------------------
 
 # 2.만들어진 프로젝트 git으로 보내기<br>
